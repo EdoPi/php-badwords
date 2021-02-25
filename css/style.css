@@ -1,0 +1,17 @@
+.length > span{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.text{
+    color: green;
+}
+
+.new-text{
+    color: red;
+}
+
+b{
+    color: black;
+}
