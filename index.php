@@ -5,6 +5,10 @@ var_dump($text);
 $textLenght= strlen($text);
 var_dump($textLenght);
 
+var_dump($_GET);
+
+$newText= str_replace($_GET['replace'],' *** ', $text);
+
 ?>
 
 
@@ -24,7 +28,11 @@ var_dump($textLenght);
         <p>la lungezza del mio testo è <?php echo $textLenght ?> caratteri</p>
 
         <h2>My text</h2>
-        <p><?php echo $text?></p>
+        
+        <p><b>Il mio testo è: </b><?php echo $text?></p>
+
+        <h2>My Text Modified</h2>
+        <p><b>Il nuoco testo con la parola modificata è: </b><?php echo $newText ?> </p>
 
     </div>
     
